@@ -12,25 +12,29 @@
       </ul>
     </div>
   <% end %>
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name, autofocus: true %>
+  <div class="users-form">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, autofocus: true %>
   </div>
-  <div>
+  <div class="users-form">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="users-form">
     <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
 
-  <div>
+  <div class="users-form">
     <%= f.label :password %>
     <%= f.password_field :password %>
   </div>
-  <div>
+  <div class="users-form">
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
   </div>
-  <div>
-    <%= f.submit "Submit", class: 'btn btn-primary' %>
+  <div >
+    <%= f.submit "Submit", class: "users-form-button" %>
   </div>
 
 <% end %>
